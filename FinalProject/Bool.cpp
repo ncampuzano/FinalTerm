@@ -112,3 +112,11 @@ boolean isTriangle(point x, point y, point z){
   };
   return false;
 };
+boolean itBelongsSet(set_integer x, integer n, integer y){
+  for(integer i = 0; i <n; i++){
+    if(x[i] == y){
+      return true;
+    };
+  };
+  return false;
+};

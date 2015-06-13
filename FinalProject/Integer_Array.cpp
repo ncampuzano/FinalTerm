@@ -2,6 +2,7 @@
 #include"Definitions.h"
 #include"Char_Array.h"
 #include"Integer.h"
+#include"Bool.h"
 #include<iostream>
 using namespace std;
 
@@ -66,17 +67,26 @@ set_integer unionSets(set_integer x, integer n, set_integer y, integer m){
   };
   return result;
 };
-set_integer itBelongsSet(set_integer x, integer n, integer y){
-  for(integer i = 0; i <n i++){
-    if(x[i] == y){
-      return true;
-    };
-  };
-  return false;
-};
-
 set_integer intersectionSets(set_integer x, integer n, set_integer y, integer m){
-
+  if(n <= m){
+    set_integer result = create_set_integer(n);
+    for(integer i= 0, j= 0; i<n; i++){
+      if(itBelongsSet(y,m,x[i])){
+        result[j] = x[i];
+        j++;
+      };
+    };
+    return result;
+  }else{
+    set_integer result = create_set_integer(m);
+    for(integer i= 0, j= 0; i<n; i++){
+      if(itBelongsSet(x,n,y[i])){
+        result[j] = y[i];
+        j++;
+      };
+    };
+    return result;
+  };
 };
 set_integer differenceSets(set_integer x, integer n, set_integer y, integer m);
 set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, integer m);

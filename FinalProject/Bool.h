@@ -16,6 +16,7 @@ boolean directionGear(boolean x, integer a, integer b);
 boolean isPoint(point x, point y, point z);
 boolean isLine(point x, point y, point z);
 boolean isTriangle(point x, point y, point z);
+boolean itBelongsSet(set_integer x, integer n, integer y);
 
 
 #endif // BOOL_H_INCLUDED

@@ -19,7 +19,20 @@ void Union(){
   write_set_integer(cout, result, numberF+numberS);
 };
 void Intersection(){
-
+  write_line(cout);
+  write_character_array(cout, "Give me the number of elements in first set: ");
+  integer numberF = read_positive_zero_number(cin);
+  set_integer firstSet = read_set_integer(cin, numberF);
+  write_character_array(cout, "Give me the number of elements in second set: ");
+  integer numberS = read_positive_zero_number(cin);
+  set_integer secondSet = read_set_integer(cin, numberS);
+  set_integer result = intersectionSets(firstSet, numberF, secondSet, numberS);
+  writeln_character_array(cout, "The union between two sets is: ");
+  if(numberF <= numberS){
+    write_set_integer(cout, result,numberF);
+  }else{
+    write_set_integer(cout, result,numberS);
+  };
 };
 void Difference(){
 
