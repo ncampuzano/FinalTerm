@@ -17,6 +17,7 @@ int main()
     writeln_character_array(cout, "5. Money");
     writeln_character_array(cout, "6. Strings");
     writeln_character_array(cout, "7. Polynomials");
+    writeln_character_array(cout, "8. Sets");
     option opt = read_option(cin);
     switch(opt){
       case 1: Farm() ;break;
@@ -26,5 +27,6 @@ int main()
       case 5: Money(); break;
       case 6: Strings(); break;
       case 7: Polynomials();break;
+      case 8: Sets();break;
     };
 }

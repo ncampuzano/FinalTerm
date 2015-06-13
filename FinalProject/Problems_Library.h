@@ -11,4 +11,5 @@ void Geometrical();
 void Money();
 void Strings();
 void Polynomials();
+void Sets();
 #endif // PROBLEMS_LIBRARY_H_INCLUDED
