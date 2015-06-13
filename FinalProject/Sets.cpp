@@ -59,7 +59,13 @@ void SymmetricDifference(){
   write_set_integer(cout, result, numberF+numberS);
 };
 void ItBelongs(){
-
+  write_line(cout);
+  write_character_array(cout, "Give me the number of elements in first set: ");
+  integer numberF = read_positive_zero_number(cin);
+  set_integer firstSet = read_set_integer(cin, numberF);
+  write_character_array(cout, "Give me the element to evaluate: ");
+  integer number = read_integer(cin);
+  if(itBelongsSet(firstSet, numberF, ))
 };
 void Content(){
   write_line(cout);
