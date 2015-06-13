@@ -1,0 +1,158 @@
+# depslib dependency file v1.0
+1433960193 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\integer_array.cpp
+	"Integer_Array.h"
+	"Definitions.h"
+	"Char_Array.h"
+	"Integer.h"
+	<iostream>
+
+1434198769 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\main.cpp
+	<iostream>
+	"Definitions.h"
+	"Integer.h"
+	"Char_Array.h"
+	"Problems_Library.h"
+	"Bool_Array.h"
+
+1434162452 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\bool.cpp
+	"Integer.h"
+	"Bool.h"
+	"Char_Array.h"
+	"Real.h"
+	<iostream>
+
+1434165804 g:\universidad nacional\semestre i\programacion de computadores\finalproject\integer.h
+	<iostream>
+	"Definitions.h"
+
+1434162451 g:\universidad nacional\semestre i\programacion de computadores\finalproject\bool.h
+	<iostream>
+	"Definitions.h"
+
+1434163432 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\char.cpp
+	"Char.h"
+	<iostream>
+
+1434163383 g:\universidad nacional\semestre i\programacion de computadores\finalproject\char.h
+	"Definitions.h"
+	<iostream>
+
+1434199159 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\real_array.cpp
+	"Real_Array.h"
+	"Real.h"
+	"Char_Array.h"
+	"Integer.h"
+	<iostream>
+
+1434200332 g:\universidad nacional\semestre i\programacion de computadores\finalproject\real_array.h
+	"Definitions.h"
+	<iostream>
+
+1434197455 g:\universidad nacional\semestre i\programacion de computadores\finalproject\definitions.h
+
+1434167905 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\char_array.cpp
+	"Char_Array.h"
+	"Integer.h"
+	<iostream>
+
+1434167779 g:\universidad nacional\semestre i\programacion de computadores\finalproject\char_array.h
+	"Definitions.h"
+	<iostream>
+
+1433796741 g:\universidad nacional\semestre i\programacion de computadores\finalproject\integer_array.h
+	"Definitions.h"
+	<iostream>
+
+1434202325 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\real.cpp
+	<math.h>
+	"Real.h"
+	"Real_Array.h"
+	"Char_Array.h"
+	<iostream>
+
+1434202139 g:\universidad nacional\semestre i\programacion de computadores\finalproject\real.h
+	"Definitions.h"
+	<iostream>
+
+1434167624 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\integer.cpp
+	"Integer.h"
+	"Char.h"
+	"Char_Array.h"
+	<math.h>
+
+1434198820 g:\universidad nacional\semestre i\programacion de computadores\finalproject\problems_library.h
+	"Definitions.h"
+
+1433791757 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\farm.cpp
+	"Problems_Library.h"
+	"Char_Array.h"
+	"Integer.h"
+	"GlobalFunctions.h"
+
+1433305147 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\problems_library.cpp
+	"Problems_Library.h"
+	"Char_Array.h"
+	"Integer.h"
+
+1433354463 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\bool_array.cpp
+	"Bool_Array.h"
+	"math.h"
+
+1434152784 g:\universidad nacional\semestre i\programacion de computadores\finalproject\bool_array.h
+	"Definitions.h"
+	<iostream>
+
+1433787722 g:\universidad nacional\semestre i\programacion de computadores\finalproject\globalfunctions.h
+	<iostream>
+
+1433787984 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\globalfunctions.cpp
+	<iostream>
+
+1433944032 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\build.cpp
+	"Problems_Library.h"
+	"GlobalFunctions.h"
+	"Integer.h"
+	"Char_Array.h"
+	"Real_Array.h"
+	"Real.h"
+
+1433959898 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\gear.cpp
+	"Problems_Library.h"
+	"Char_Array.h"
+	"Integer.h"
+	"GlobalFunctions.h"
+	"Integer_Array.h"
+	"Bool.h"
+
+1433944056 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\geometrical.cpp
+	"Problems_Library.h"
+	"GlobalFunctions.h"
+	"Integer.h"
+	"Real.h"
+	"Char_Array.h"
+	"Real_Array.h"
+	"Bool.h"
+
+1433908287 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\money.cpp
+	"Problems_Library.h"
+	"GlobalFunctions.h"
+	"Char_Array.h"
+	"Integer.h"
+
+1434167946 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\strings.cpp
+	"Problems_Library.h"
+	"GlobalFunctions.h"
+	"Char_Array.h"
+	"Integer.h"
+	"Char.h"
+	"Bool.h"
+
+1434202177 source:g:\universidad nacional\semestre i\programacion de computadores\finalproject\polynomials.cpp
+	"Problems_Library.h"
+	"Real_Array.h"
+	"Integer.h"
+	"Char_Array.h"
+	"GlobalFunctions.h"
+	"Real.h"
+	<iostream>
+
