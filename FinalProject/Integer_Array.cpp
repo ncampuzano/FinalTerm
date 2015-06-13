@@ -45,6 +45,3 @@ integer_array converToBinary(integer number, integer_array x, integer n, integer
      return converToBinary(number, x, n-1, position+1);
     }
 };
-{
-
-}

@@ -7,7 +7,7 @@ using namespace std;
 //Persistent
 integer read_integer(istream& is){
   integer result;
-  is>>integer;
+  is>>result;
   return result;
 };
 option read_option(istream& is){
