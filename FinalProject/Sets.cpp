@@ -4,6 +4,24 @@
 #include<iostream>
 using namespace std;
 
+void Union(){
+
+};
+void Intersection(){
+
+};
+void Difference(){
+
+};
+void SymmetricDifference(){
+
+};
+void ItBelongs(){
+
+};
+void Content(){
+
+};
 void Sets(){
   write_line(cout);
   writeln_character_array(cout, "Choose the problem");
@@ -15,7 +33,11 @@ void Sets(){
   writeln_character_array(cout, "6. Content");
   option optionNumber = read_option(cin);
   switch(optionNumber){
-    case 1:Turns();break;
-    case 2:Direction();break;
+    case 1:Union();break;
+    case 2:Intersection();break;
+    case 3:Difference();break;
+    case 4:SymmetricDifference();break;
+    case 5:ItBelongs();break;
+    case 6:Content();break;
   };
 };
