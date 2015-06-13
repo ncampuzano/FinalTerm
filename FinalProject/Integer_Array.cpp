@@ -14,11 +14,21 @@ integer_array create_integer_array(integer n){
   integer_array result = new integer[n];
   return result;
 };
+ostream& write_set_integer(ostream& os, set_integer x, integer n){
+  for(integer i=0; i < n ; i++){
+    if(i == (n-1)){
+      os<<x[i];
+    }else{
+      os<<x[i]<<" , ";
+    };
+  };
+  return os;
+};
 set_integer read_set_integer(istream& is, integer n){
   set_integer result = create_set_integer(n);
   for(integer i = 0; i < n; i++){
     write_character_array(cout, "Enter element ");
-    write_integer(cout, i);
+    write_integer(cout, i+1);
     write_character_array(cout, " : ");
     result[i] = read_integer(cin);
   };
@@ -45,3 +55,15 @@ integer_array converToBinary(integer number, integer_array x, integer n, integer
      return converToBinary(number, x, n-1, position+1);
     }
 };
+set_integer unionSets(set_integer x, integer n, set_integer y, integer m){
+  set_integer result = create_set_integer(n+m);
+  for(integer i = 0; i<n; i++){
+   result[i] = x[i];
+  };
+  for(integer i = n, j=0; i <n+m; i++){
+    result[i] = y[j];
+    j++;
+  };
+  return result;
+};
+

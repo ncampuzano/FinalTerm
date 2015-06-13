@@ -11,6 +11,7 @@ set_integer create_set_integer(integer n);
 //Persistent
 integer_array read_integer_array_positive_txt(istream& is, integer n, character_array txt);
 set_integer read_set_integer(istream& is, integer n);
+ostream& write_set_integer(ostream& os, set_integer x, integer n);
 
 //Analyzers
  /**
@@ -20,5 +21,6 @@ set_integer read_set_integer(istream& is, integer n);
   * @return array of numbers with max size 1024
   */
 integer_array converToBinary(integer number, integer_array x, integer n, integer position) ;
+set_integer unionSets(set_integer x, integer n, set_integer y, integer m);
 
 #endif // INTEGER_ARRAY_H_INCLUDED
