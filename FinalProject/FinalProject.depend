@@ -301,11 +301,19 @@
 	"Char_Array.h"
 	<math.h>
 
-1434210833 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\sets.cpp
+1434218397 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\sets.cpp
 	"Integer.h"
 	"Integer_Array.h"
 	"Char_Array.h"
 	"GlobalFunctions.h"
 	"Problems_Library.h"
+	<iostream>
+
+1434218478 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.cpp
+	"Integer_Array.h"
+	"Definitions.h"
+	"Char_Array.h"
+	"Integer.h"
+	"Bool.h"
 	<iostream>
 

@@ -88,6 +88,23 @@ set_integer intersectionSets(set_integer x, integer n, set_integer y, integer m)
     return result;
   };
 };
-set_integer differenceSets(set_integer x, integer n, set_integer y, integer m);
-set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, integer m);
+set_integer differenceSets(set_integer x, integer n, set_integer y, integer m){
+  set_integer result = create_set_integer(n);
+  for(integer i= 0, j= 0; i<n; i++){
+    if(!itBelongsSet(y,m,x[i])){
+      result[j] = x[i];
+      j++;
+    };
+  };
+  return result;
+};
+set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, integer m){
+  set_integer result = create_set_integer(n+m);
+  if(n <= m){
+    result = differenceSets(unionSets(x,n,y,m),n+m,intersectionSets(x,n,y,m),n);
+  }else{
+    result = differenceSets(unionSets(x,n,y,m),n+m,intersectionSets(x,n,y,m),m);
+  };
+  return result;
+};
 set_integer contentSet(set_integer x, integer n, set_integer y, integer m);
