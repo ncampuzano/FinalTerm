@@ -22,5 +22,10 @@ ostream& write_set_integer(ostream& os, set_integer x, integer n);
   */
 integer_array converToBinary(integer number, integer_array x, integer n, integer position) ;
 set_integer unionSets(set_integer x, integer n, set_integer y, integer m);
+set_integer intersectionSets(set_integer x, integer n, set_integer y, integer m);
+set_integer differenceSets(set_integer x, integer n, set_integer y, integer m);
+set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, integer m);
+set_integer itBelongsSet(set_integer x, integer n, integer y);
+set_integer contentSet(set_integer x, integer n, set_integer y, integer m);
 
 #endif // INTEGER_ARRAY_H_INCLUDED

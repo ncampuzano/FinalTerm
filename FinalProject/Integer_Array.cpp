@@ -66,4 +66,18 @@ set_integer unionSets(set_integer x, integer n, set_integer y, integer m){
   };
   return result;
 };
+set_integer itBelongsSet(set_integer x, integer n, integer y){
+  for(integer i = 0; i <n i++){
+    if(x[i] == y){
+      return true;
+    };
+  };
+  return false;
+};
 
+set_integer intersectionSets(set_integer x, integer n, set_integer y, integer m){
+
+};
+set_integer differenceSets(set_integer x, integer n, set_integer y, integer m);
+set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, integer m);
+set_integer contentSet(set_integer x, integer n, set_integer y, integer m);
