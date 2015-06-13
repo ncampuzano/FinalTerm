@@ -5,6 +5,11 @@
 using namespace std;
 
 //Persistent
+integer read_integer(istream& is){
+  integer result;
+  is>>integer;
+  return result;
+};
 option read_option(istream& is){
     integer result = -1;
     while(result <= 0){

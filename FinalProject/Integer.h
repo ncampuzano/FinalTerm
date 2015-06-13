@@ -6,6 +6,7 @@ using namespace std;
 
 
 //Persistent
+integer read_integer(istream& is);
 option read_option(istream& is);
 integer read_positive_zero_number(istream& is);
 integer read_positive_number(istream& is);

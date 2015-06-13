@@ -15,7 +15,14 @@ integer_array create_integer_array(integer n){
   return result;
 };
 set_integer read_set_integer(istream& is, integer n){
-
+  set_integer result = create_set_integer(n);
+  for(integer i = 0; i < n; i++){
+    write_character_array(cout, "Enter element ");
+    write_integer(cout, i);
+    write_character_array(cout, " : ");
+    result[i] = read_integer(cin);
+  };
+  return result;
 };
 integer_array read_integer_array_positive_txt(istream& is, integer n, character_array txt){
   integer_array result = create_integer_array(n);
@@ -38,3 +45,6 @@ integer_array converToBinary(integer number, integer_array x, integer n, integer
      return converToBinary(number, x, n-1, position+1);
     }
 };
+{
+
+}
