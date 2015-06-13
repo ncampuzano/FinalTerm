@@ -121,5 +121,13 @@ boolean itBelongsSet(set_integer x, integer n, integer y){
   return false;
 };
 boolean contentSet(set_integer x, integer n, set_integer y, integer m){
-
+  if(n > m){
+    return false;
+  };
+  for(integer i = 0; i<n; i++){
+    if(!itBelongsSet(y,m,x[i])){
+      return false;
+    };
+  };
+  return true;
 };

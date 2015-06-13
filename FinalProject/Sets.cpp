@@ -62,7 +62,22 @@ void ItBelongs(){
 
 };
 void Content(){
-
+  write_line(cout);
+  write_character_array(cout, "Give me the number of elements in first set: ");
+  integer numberF = read_positive_zero_number(cin);
+  set_integer firstSet = read_set_integer(cin, numberF);
+  write_character_array(cout, "Give me the number of elements in second set: ");
+  integer numberS = read_positive_zero_number(cin);
+  set_integer secondSet = read_set_integer(cin, numberS);
+  if(numberF > numberS){
+    write_character_array(cout, "The first set more than second set");
+    return;
+  };
+  if(contentSet(firstSet, numberF, secondSet, numberS)){
+    writeln_character_array(cout, "The first set is contained in second");
+  }else{
+    writeln_character_array(cout, "The first set is not contained in second");
+  };
 };
 void Sets(){
   write_line(cout);
