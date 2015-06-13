@@ -17,6 +17,7 @@ boolean isPoint(point x, point y, point z);
 boolean isLine(point x, point y, point z);
 boolean isTriangle(point x, point y, point z);
 boolean itBelongsSet(set_integer x, integer n, integer y);
+boolean contentSet(set_integer x, integer n, set_integer y, integer m);
 
 
 #endif // BOOL_H_INCLUDED

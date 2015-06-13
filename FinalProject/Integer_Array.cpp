@@ -107,4 +107,6 @@ set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, int
   };
   return result;
 };
-set_integer contentSet(set_integer x, integer n, set_integer y, integer m);
+set_integer contentSet(set_integer x, integer n, set_integer y, integer m){
+
+};

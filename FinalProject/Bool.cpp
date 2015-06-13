@@ -120,3 +120,6 @@ boolean itBelongsSet(set_integer x, integer n, integer y){
   };
   return false;
 };
+boolean contentSet(set_integer x, integer n, set_integer y, integer m){
+
+};
