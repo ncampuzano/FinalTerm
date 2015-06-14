@@ -16,5 +16,5 @@ typedef real* square;
 typedef real* polynomial;
 typedef boolean* boolean_array_true;
 typedef boolean* boolean_array;
-
+typedef integer_array* integer_matriz;
 #endif // DEFINITIONS_H_INCLUDED
