@@ -12,4 +12,5 @@ void Money();
 void Strings();
 void Polynomials();
 void Sets();
+void Matriz();
 #endif // PROBLEMS_LIBRARY_H_INCLUDED

@@ -1,4 +1,5 @@
-
+#include"Integer_Matriz.h"
+#include"Integer_Array.h"
 // Constructoras
 integer_matriz create_integer_matriz(integer n, integer m){
     integer_matriz result = new integer_array[n];
