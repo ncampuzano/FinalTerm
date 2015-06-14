@@ -45,17 +45,30 @@ void SumMatriz(){
   integer_matriz secondMatriz = read_integer_matriz(cin, n, m);
   write_integer_matriz(cout, sumIntegerMatriz(firstMatriz, secondMatriz,n,m),n,m);
 };
-
+void SumDiag(){
+  writeln_character_array(cout, "Give me, first rows and second columns for matriz");
+  integer n = read_positive_zero_number(cin);
+  integer m = read_positive_zero_number(cin);
+  writeln_character_array(cout, "The matriz: ");
+  integer_matriz firstMatriz = read_integer_matriz(cin, n, m);
+  write_character_array(cout, "First diagonal: ");
+  write_integer(cout, sumFirstDiagIntegerMatriz(firstMatriz,n,m));
+  writeln_character_array(cout, "");
+  write_character_array(cout, "Second diagonal: ");
+  write_integer(cout, sumSecondDiagIntegerMatriz(firstMatriz,n,m));
+};
 void Matriz(){
   write_line(cout);
   writeln_character_array(cout, "Choose the problem");
   writeln_character_array(cout, "1. Sum of matrices");
   writeln_character_array(cout, "3. Sum of column");
   writeln_character_array(cout, "4. Sum of row");
+  writeln_character_array(cout, "5. Sum of diagonals");
   option optionNumber = read_option(cin);
   switch(optionNumber){
     case 1:SumMatriz();break;
     case 3:SumColMatriz();break;
     case 4:SumRowMatriz();break;
+    case 5:SumDiag();break;
   };
 };

@@ -156,20 +156,20 @@
 	"Real.h"
 	<iostream>
 
-1434219359 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\bool.cpp
+1434290698 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\bool.cpp
 	"Integer.h"
 	"Bool.h"
 	"Char_Array.h"
 	"Real.h"
 	<iostream>
 
-1434256937 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.h
+1434290941 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.h
 	<iostream>
 	"Definitions.h"
 
 1434248082 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\definitions.h
 
-1434218953 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\bool.h
+1434290686 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\bool.h
 	<iostream>
 	"Definitions.h"
 
@@ -295,7 +295,7 @@
 	"Char.h"
 	"Bool.h"
 
-1434256924 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.cpp
+1434291035 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.cpp
 	"Integer.h"
 	"Char.h"
 	"Char_Array.h"
@@ -324,11 +324,11 @@
 	"Char_Array.h"
 	"Integer.h"
 
-1434256412 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_matriz.h
+1434289278 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_matriz.h
 	"Definitions.h"
 	<iostream>
 
-1434256512 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\matriz.cpp
+1434257153 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\matriz.cpp
 	"Problems_Library.h"
 	"Integer_Matriz.h"
 	"Char_Array.h"

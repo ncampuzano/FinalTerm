@@ -131,3 +131,31 @@ boolean contentSet(set_integer x, integer n, set_integer y, integer m){
   };
   return true;
 };
+boolean isMagicRowIntegerMatriz(integer_matriz x, integer n, integer m){
+  integer firstRow = sumRowIntegerMatriz(x,m,0);
+  for(integer i = 1; i < n; i++){
+    if(firstRow != sumRowIntegerMatriz(x,m,i)){
+      return false;
+    };
+  };
+  return true;
+};
+boolean isMagicColIntegerMatriz(integer_matriz x, integer n, integer m){
+  integer firstCol = sumColIntegerMatriz(x,n,0);
+  for(integer i = 1; i < m; i++){
+    if(firstCol != sumColIntegerMatriz(x,n,i)){
+      return false;
+    };
+  };
+  return true;
+};
+boolean isMagicDiagIntegerMatriz(integer_matriz x, integer n, integer m){
+  if(sumFirstDiagIntegerMatriz(x,n,m) == sumSecondDiagIntegerMatriz(x,n,m)){
+    return true;
+  };
+  return false;
+};
+boolean isMagicIntegerMatriz(integer_matriz x, integer n, integer m){
+
+};
+

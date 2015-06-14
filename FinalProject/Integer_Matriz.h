@@ -13,4 +13,5 @@ ostream& write_integer_matriz(ostream& os, integer_matriz x, integer n, integer 
 integer_matriz sumIntegerMatriz(integer_matriz x, integer_matriz y, integer n, integer m);
 integer_matriz multiplyIntegerMatriz(integer_matriz x, integer_matriz y, integer n, integer m);
 
+
 #endif // INTEGER_MATRIZ_H_INCLUDED

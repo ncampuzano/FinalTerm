@@ -200,3 +200,18 @@ integer sumRowIntegerMatriz(integer_matriz x, integer m, integer row){
   };
   return result;
 };
+integer sumFirstDiagIntegerMatriz(integer_matriz x, integer n, integer m){
+  integer result = 0;
+  for(integer i = 0; (i < m)||(i <n); i++){
+    result += x[i][i];
+  };
+  return result;
+};
+integer sumSecondDiagIntegerMatriz(integer_matriz x, integer n, integer m){
+  integer result = 0;
+  for(integer i = 0, j = m-1; (j >= 0)||(i < n); i++){
+    result += x[i][j];
+    j--;
+  };
+  return result;
+};

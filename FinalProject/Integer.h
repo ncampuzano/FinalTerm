@@ -37,5 +37,7 @@ integer cubeInsideOtherCube(integer n, integer m);
 integer indexChar(character letter, character_array x, integer n);
 integer sumColIntegerMatriz(integer_matriz x, integer n, integer col);
 integer sumRowIntegerMatriz(integer_matriz x, integer m, integer row);
+integer sumFirstDiagIntegerMatriz(integer_matriz x, integer n, integer m);
+integer sumSecondDiagIntegerMatriz(integer_matriz x, integer n, integer m);
 
 #endif // INTEGER_H_INCLUDED
