@@ -215,3 +215,11 @@ integer sumSecondDiagIntegerMatriz(integer_matriz x, integer n, integer m){
   };
   return result;
 };
+integer multiplyRowWithColIntegerMatriz(integer_matriz x, integer_matriz y, integer row, integer col, integer n){
+  integer result = 0;
+  for(integer i = 0; i < n; i++){
+    result += x[row][i] * y[i][col];
+  };
+  return result;
+};
+

@@ -57,10 +57,15 @@ integer_matriz reeplaceMatriz(integer_matriz x, integer n, integer m,integer num
   };
   return result;
 };
-/*integer_matriz multiplyIntegerMatriz(integer_matriz x, integer_matriz y, integer n, integer m){
+integer_matriz multiplyIntegerMatriz(integer_matriz x, integer_matriz y, integer n, integer m){
   integer_matriz result = create_integer_matriz(n, m);
+  for(integer i = 0; i < n; i++){
+    for(integer j = 0; j < m; j++){
+      result[i][j] = multiplyRowWithColIntegerMatriz(x,y,i,j,n);
+    };
+  };
   return result;
-};*/
+};
 
 
 

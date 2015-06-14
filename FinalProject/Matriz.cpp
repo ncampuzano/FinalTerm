@@ -21,6 +21,16 @@ void SumRowMatriz(){
   write_character_array(cout, "The value of row is: ");
   write_integer(cout, sumRowIntegerMatriz(matriz, m, row));
 };
+void MultiplyMatriz(){
+  writeln_character_array(cout, "Give me, first rows and second columns for matriz");
+  integer n = read_positive_zero_number(cin);
+  integer m = read_positive_zero_number(cin);
+  writeln_character_array(cout, "First matriz: ");
+  integer_matriz firstMatriz = read_integer_matriz(cin, n, m);
+  writeln_character_array(cout, "Second matriz: ");
+  integer_matriz secondMatriz = read_integer_matriz(cin, n, m);
+  write_integer_matriz(cout, multiplyIntegerMatriz(firstMatriz, secondMatriz,n,m),n,m);
+};
 void SumColMatriz(){
   writeln_character_array(cout, "Give me, first rows and second columns for matriz");
   integer n = read_positive_zero_number(cin);
@@ -84,6 +94,7 @@ void Matriz(){
   write_line(cout);
   writeln_character_array(cout, "Choose the problem");
   writeln_character_array(cout, "1. Sum of matrices");
+  writeln_character_array(cout, "2. Multiply matrices");
   writeln_character_array(cout, "3. Sum of column");
   writeln_character_array(cout, "4. Sum of row");
   writeln_character_array(cout, "5. Sum of diagonals");
@@ -92,6 +103,7 @@ void Matriz(){
   option optionNumber = read_option(cin);
   switch(optionNumber){
     case 1:SumMatriz();break;
+    case 2:MultiplyMatriz();break;
     case 3:SumColMatriz();break;
     case 4:SumRowMatriz();break;
     case 5:SumDiag();break;
