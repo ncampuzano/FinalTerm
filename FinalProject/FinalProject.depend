@@ -163,7 +163,7 @@
 	"Real.h"
 	<iostream>
 
-1434296827 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.h
+1434299802 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.h
 	<iostream>
 	"Definitions.h"
 
@@ -234,7 +234,7 @@
 	"Integer_Array.h"
 	"Bool.h"
 
-1434294109 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.h
+1434298633 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.h
 	"Definitions.h"
 	<iostream>
 
@@ -273,7 +273,7 @@
 	"Real.h"
 	<iostream>
 
-1434202325 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\real.cpp
+1434297792 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\real.cpp
 	<math.h>
 	"Real.h"
 	"Real_Array.h"

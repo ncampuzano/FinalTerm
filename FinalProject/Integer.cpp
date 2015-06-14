@@ -216,29 +216,3 @@ integer multiplyRowWithColIntegerMatriz(integer_matriz x, integer_matriz y, inte
   return result;
 };
 
-integer sumChairsRecursive(integer_array x, integer n, integer i){
-  if(i == n){
-    return x[i-1] * x[i];
-  }else{
-    return x[i+1] * x[i+2] + sumChairsRecursive(x,n,i+3);
-  };
-};
-integer howLegsChair(integer_array x, integer n){
-    integer A = sumChairsRecursive(x,n,0);
-    integer B = A - (A * 0.3);
-    return A + (B* 4);
-};
-integer howManyMarkesRecursive(integer_array x, integer n, integer i){
-  if(i == (n-1)){
-    return x[i];
-  }else{
-    return x[i] + howManyMarkesRecursive(x,n, i+1);
-  };
-};
-integer howManyMarkes(integer_array x, integer n){
-  return howManyMarkesRecursive(x,n,0);
-};
-integer howManyNewBirds(integer x, integer eggs){
-  double result = (((x * 0.2) * eggs) * 0.3) * 0.5;
-  return (int)result;
-};
