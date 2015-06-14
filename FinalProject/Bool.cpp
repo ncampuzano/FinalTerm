@@ -156,6 +156,9 @@ boolean isMagicDiagIntegerMatriz(integer_matriz x, integer n, integer m){
   return false;
 };
 boolean isMagicIntegerMatriz(integer_matriz x, integer n, integer m){
-
+  if(isMagicColIntegerMatriz(x,n,m) && isMagicDiagIntegerMatriz(x,n,m) && isMagicRowIntegerMatriz(x,n,m)){
+    return true;
+  };
+  return false;
 };
 

@@ -57,6 +57,18 @@ void SumDiag(){
   write_character_array(cout, "Second diagonal: ");
   write_integer(cout, sumSecondDiagIntegerMatriz(firstMatriz,n,m));
 };
+void IsMagic(){
+  writeln_character_array(cout, "Give me, first rows and second columns for matriz");
+  integer n = read_positive_zero_number(cin);
+  integer m = read_positive_zero_number(cin);
+  writeln_character_array(cout, "The matriz: ");
+  integer_matriz firstMatriz = read_integer_matriz(cin, n, m);
+  if(isMagicIntegerMatriz(x,n,m)){
+    writeln_character_array(cout, "The matriz is magic :D");
+  }else{
+    writeln_character_array(cout, "The matriz is not magic :(");
+  };
+};
 void Matriz(){
   write_line(cout);
   writeln_character_array(cout, "Choose the problem");
@@ -64,11 +76,13 @@ void Matriz(){
   writeln_character_array(cout, "3. Sum of column");
   writeln_character_array(cout, "4. Sum of row");
   writeln_character_array(cout, "5. Sum of diagonals");
+  writeln_character_array(cout, "6. Is Magic?");
   option optionNumber = read_option(cin);
   switch(optionNumber){
     case 1:SumMatriz();break;
     case 3:SumColMatriz();break;
     case 4:SumRowMatriz();break;
     case 5:SumDiag();break;
+    case 6:IsMagic();break;
   };
 };
