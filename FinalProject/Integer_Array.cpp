@@ -6,7 +6,20 @@
 #include<iostream>
 using namespace std;
 
-
+integer_array read_integer_array_floors(istream& is, integer n){
+  integer_array result = create_integer_array(n);
+  for(integer i = 0; i < n; i+=3){
+    result[i] = i+1;
+    write_character_array(cout, "Floor ");
+    write_integer(cout, i+1);
+    write_character_array(cout, "\n");
+    write_character_array(cout, "How many lounges?: ");
+    result[i+1] = read_integer(cin);
+    write_character_array(cout, "How many chairs in lounge?: ");
+    result[i+2] = read_integer(cin);
+  };
+  return result;
+};
 set_integer create_set_integer(integer n){
   set_integer result = new integer[n];
   return result;
@@ -61,7 +74,6 @@ integer_array read_integer_array_positive_txt(istream& is, integer n, character_
   };
   return result;
 };
-
 integer_array converToBinary(integer number, integer_array x, integer n, integer position ){
     if(n == 0){
      x[position] = number % 2;

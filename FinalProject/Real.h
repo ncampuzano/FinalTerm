@@ -34,5 +34,6 @@ real restPolynomials(polynomial x, integer n, polynomial y, integer m, real xVal
 real multiplyPolynomials(polynomial x, integer n, polynomial y, integer m, real xValue);
 real dividePolynomials(polynomial x, integer n, polynomial y, integer m, real xValue);
 real residuePolynomials(polynomial x, integer n, polynomial y, integer m, real xValue);
+real log_b(real x, real b);
 
 #endif // REAL_H_INCLUDED

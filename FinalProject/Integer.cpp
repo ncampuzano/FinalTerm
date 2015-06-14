@@ -1,5 +1,6 @@
 #include"Integer.h"
 #include"Char.h"
+#include"Real.h"
 #include"Char_Array.h"
 #include<math.h>
 using namespace std;
@@ -168,15 +169,7 @@ integer idealWall(square wall, square brick, real cement){
     return width * height;
 };
 integer howToWeight(integer n){
-  /*return (int)ceil(log_b(n,3)) + 1;*/
-  /*if(n == 1){
-    return 2;
-  };
-  if(n % 2){
-    return 1 + howToWeight(n/2);
-  }else{
-    return 2 + howToWeight((n-1)/2);
-  };*/
+    return (int)ceil(log_b(n,3)) + 1;
 };
 integer indexChar(character letter, character_array x, integer n){
   for(integer i = 0 ; i < n; i++){
@@ -223,3 +216,29 @@ integer multiplyRowWithColIntegerMatriz(integer_matriz x, integer_matriz y, inte
   return result;
 };
 
+integer sumChairsRecursive(integer_array x, integer n, integer i){
+  if(i == n){
+    return x[i-1] * x[i];
+  }else{
+    return x[i+1] * x[i+2] + sumChairsRecursive(x,n,i+3);
+  };
+};
+integer howLegsChair(integer_array x, integer n){
+    integer A = sumChairsRecursive(x,n,0);
+    integer B = A - (A * 0.3);
+    return A + (B* 4);
+};
+integer howManyMarkesRecursive(integer_array x, integer n, integer i){
+  if(i == (n-1)){
+    return x[i];
+  }else{
+    return x[i] + howManyMarkesRecursive(x,n, i+1);
+  };
+};
+integer howManyMarkes(integer_array x, integer n){
+  return howManyMarkesRecursive(x,n,0);
+};
+integer howManyNewBirds(integer x, integer eggs){
+  double result = (((x * 0.2) * eggs) * 0.3) * 0.5;
+  return (int)result;
+};
