@@ -3,6 +3,7 @@
 #include"Char_Array.h"
 #include"Integer.h"
 #include"GlobalFunctions.h"
+#include"Bool.h"
 #include<iostream>
 using namespace std;
 void SumRowMatriz(){
@@ -62,12 +63,22 @@ void IsMagic(){
   integer n = read_positive_zero_number(cin);
   integer m = read_positive_zero_number(cin);
   writeln_character_array(cout, "The matriz: ");
-  integer_matriz firstMatriz = read_integer_matriz(cin, n, m);
-  if(isMagicIntegerMatriz(x,n,m)){
+  integer_matriz matriz = read_integer_matriz(cin, n, m);
+  if(isMagicIntegerMatriz(matriz,n,m)){
     writeln_character_array(cout, "The matriz is magic :D");
   }else{
     writeln_character_array(cout, "The matriz is not magic :(");
   };
+};
+void ReeplaceMatriz(){
+  writeln_character_array(cout, "Give me, first rows and second columns for matriz");
+  integer n = read_positive_zero_number(cin);
+  integer m = read_positive_zero_number(cin);
+  writeln_character_array(cout, "The matriz: ");
+  integer_matriz matriz = read_integer_matriz(cin, n, m);
+  write_character_array(cout, "Give me the number to evaluate: ");
+  integer number = read_integer(cin);
+  write_integer_matriz(cout, reeplaceMatriz(matriz,n,m,number),n,m);
 };
 void Matriz(){
   write_line(cout);
@@ -77,6 +88,7 @@ void Matriz(){
   writeln_character_array(cout, "4. Sum of row");
   writeln_character_array(cout, "5. Sum of diagonals");
   writeln_character_array(cout, "6. Is Magic?");
+  writeln_character_array(cout, "7. Replace matriz with ones and zeros");
   option optionNumber = read_option(cin);
   switch(optionNumber){
     case 1:SumMatriz();break;
@@ -84,5 +96,6 @@ void Matriz(){
     case 4:SumRowMatriz();break;
     case 5:SumDiag();break;
     case 6:IsMagic();break;
+    case 7:ReeplaceMatriz();break;
   };
 };

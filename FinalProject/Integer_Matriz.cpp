@@ -44,6 +44,19 @@ integer_matriz sumIntegerMatriz(integer_matriz x, integer_matriz y, integer n, i
   };
   return result;
 };
+integer_matriz reeplaceMatriz(integer_matriz x, integer n, integer m,integer number){
+  integer_matriz result = create_integer_matriz(n, m);
+  for(integer i = 0; i < n; i++){
+    for(integer j = 0; j < m; j++){
+      if(x[i][j] <= number){
+        result[i][j] = 0;
+      }else{
+        result[i][j] = 1;
+      };
+    };
+  };
+  return result;
+};
 /*integer_matriz multiplyIntegerMatriz(integer_matriz x, integer_matriz y, integer n, integer m){
   integer_matriz result = create_integer_matriz(n, m);
   return result;

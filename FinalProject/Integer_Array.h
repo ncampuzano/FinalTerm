@@ -29,4 +29,5 @@ set_integer differenceSets(set_integer x, integer n, set_integer y, integer m);
 set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, integer m);
 
 
+
 #endif // INTEGER_ARRAY_H_INCLUDED
