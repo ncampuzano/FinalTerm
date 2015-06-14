@@ -65,7 +65,11 @@ void ItBelongs(){
   set_integer firstSet = read_set_integer(cin, numberF);
   write_character_array(cout, "Give me the element to evaluate: ");
   integer number = read_integer(cin);
-  if(itBelongsSet(firstSet, numberF, ))
+  if(itBelongsSet(firstSet, numberF, number)){
+    write_character_array(cout, "The number belong to set ");
+  }else{
+    write_character_array(cout, "The number does not belong to set ");
+  };
 };
 void Content(){
   write_line(cout);
