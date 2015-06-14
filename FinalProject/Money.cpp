@@ -3,6 +3,7 @@
 #include "Char_Array.h"
 #include "Integer.h"
 void Weigh(){
+  write_line(cout);
   writeln_character_array(cout, "How many coins do you have?");
   integer number = read_positive_number(cin);
   write_character_array(cout, "You have to weigh: ");

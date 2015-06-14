@@ -186,3 +186,17 @@ integer indexChar(character letter, character_array x, integer n){
   };
   return -1;
 };
+integer sumColIntegerMatriz(integer_matriz x, integer n, integer col){
+  integer result = 0;
+  for(integer i = 0; i < n; i++){
+    result += x[i][col-1];
+  };
+  return result;
+};
+integer sumRowIntegerMatriz(integer_matriz x, integer m, integer row){
+  integer result = 0;
+  for(integer i = 0; i < m; i++){
+    result += x[row-1][i];
+  };
+  return result;
+};

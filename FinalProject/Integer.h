@@ -35,6 +35,7 @@ integer triangleType(real a, real b, real c);
 integer triangleTypeAngle(real a, real b, real c);
 integer cubeInsideOtherCube(integer n, integer m);
 integer indexChar(character letter, character_array x, integer n);
-
+integer sumColIntegerMatriz(integer_matriz x, integer n, integer col);
+integer sumRowIntegerMatriz(integer_matriz x, integer m, integer row);
 
 #endif // INTEGER_H_INCLUDED
