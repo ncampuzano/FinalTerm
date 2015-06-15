@@ -44,5 +44,6 @@ integer sumIntegerArray(integer_array x, integer n);
 integer productTwoIntegerArrya(integer_array x, integer y, integer n);
 integer minIntegerArray(integer_array x, integer n);
 integer maxIntegerArray(integer_array x, integer n);
+integer converToNumber(integer_array x, integer n);
 
 #endif // INTEGER_H_INCLUDED

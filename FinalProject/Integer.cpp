@@ -233,3 +233,19 @@ integer minIntegerArray(integer_array x, integer n){
   };
   return result;
 };
+integer maxIntegerArray(integer_array x, integer n){
+  integer result = x[0];
+  for(integer i = 1; i < n; i++){
+    if(result <= x[i]){
+      result = x[i];
+    };
+  };
+  return result;
+};
+integer converToNumber(integer_array x, integer n){
+  integer result = 0;
+  for(integer i = 0; i < n; i++){
+    result += x[i] * pow(2,i);
+  };
+  return result;
+};

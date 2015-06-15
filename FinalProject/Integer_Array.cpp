@@ -74,16 +74,6 @@ integer_array read_integer_array_positive_txt(istream& is, integer n, character_
   };
   return result;
 };
-integer_array converToBinary(integer number, integer_array x, integer n, integer position ){
-    if(n == 0){
-     x[position] = number % 2;
-     return x;
-    }else{
-     x[position] = number % 2;
-     number = number / 2;
-     return converToBinary(number, x, n-1, position+1);
-    }
-};
 set_integer unionSets(set_integer x, integer n, set_integer y, integer m){
   set_integer result = create_set_integer(n+m);
   for(integer i = 0; i<n; i++){
