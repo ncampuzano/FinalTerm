@@ -107,3 +107,6 @@ real dividePolynomials(polynomial x, integer n, polynomial y, integer m, real xV
 real residuePolynomials(polynomial x, integer n, polynomial y, integer m, real xValue){
   return fmod(evaluatePolynomial(x, n, xValue), evaluatePolynomial(y, m, xValue));
 };
+real averageIntegerArray(integer_array x, integer n){
+  return sumIntegerArray(x,n) /n;
+};
