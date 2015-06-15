@@ -119,12 +119,7 @@ integer howManyNewBirds(integer x, integer eggs){
   return (int)result;
 };
 integer howManyTurns(integer_array x, integer n, integer a, integer b){
-    cout<<" : "<<b<<endl;
-    cout<<" : "<<a<<endl;
-    cout<<" : "<<x[0]<<endl;
-    cout<<" : "<<(x[0] * b)<<endl;
-    cout<<" : "<<(x[0] * b) / x[a]<<endl;
-    return 0;
+    return (x[0] * b) / x[a];
 };
 integer idealWell(real lengthWell,  real lengthBrick, real cement){
     return lengthWell / (lengthBrick + (cement / 2));
@@ -212,6 +207,13 @@ integer multiplyRowWithColIntegerMatriz(integer_matriz x, integer_matriz y, inte
   integer result = 0;
   for(integer i = 0; i < n; i++){
     result += x[row][i] * y[i][col];
+  };
+  return result;
+};
+integer sumIntegerArray(integer_array x, integer n){
+  integer result = 0;
+  for(integer i= 0; i < n; i++){
+    result += x[i];
   };
   return result;
 };

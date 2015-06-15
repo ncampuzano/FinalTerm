@@ -40,5 +40,6 @@ integer sumRowIntegerMatriz(integer_matriz x, integer m, integer row);
 integer sumFirstDiagIntegerMatriz(integer_matriz x, integer n, integer m);
 integer sumSecondDiagIntegerMatriz(integer_matriz x, integer n, integer m);
 integer multiplyRowWithColIntegerMatriz(integer_matriz x, integer_matriz y, integer row, integer col, integer n);
+integer sumIntegerArray(integer_array, integer n);
 
 #endif // INTEGER_H_INCLUDED

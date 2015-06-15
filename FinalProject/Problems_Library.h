@@ -13,4 +13,5 @@ void Strings();
 void Polynomials();
 void Sets();
 void Matriz();
+void Arrays();
 #endif // PROBLEMS_LIBRARY_H_INCLUDED
