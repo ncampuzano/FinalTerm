@@ -1,5 +1,6 @@
 #include<math.h>
 #include"Real.h"
+#include"Integer.h"
 #include"Real_Array.h"
 #include"Char_Array.h"
 #include<iostream>

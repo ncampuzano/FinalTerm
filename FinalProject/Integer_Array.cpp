@@ -132,3 +132,11 @@ integer_array directProductIntegerArray(integer_array x, integer_array y, intege
   };
   return result;
 };
+integer_array converToBinary(integer x, integer n){
+  integer_array result = create_integer_array(n);
+  for(integer i = 0; i < n; i++){
+    result[i] = x % 2;
+    x = x / 2;
+  };
+  return result;
+};
