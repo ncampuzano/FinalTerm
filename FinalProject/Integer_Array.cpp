@@ -135,4 +135,10 @@ set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, int
   };
   return result;
 };
-
+integer_array directProductIntegerArray(integer_array x, integer_array y, integer n){
+  integer_array result = create_integer_array(n);
+  for(integer i= 0; i < n; i++){
+    result[i] = x[i]*y[i];
+  };
+  return result;
+};
