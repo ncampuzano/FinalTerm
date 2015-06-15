@@ -217,4 +217,11 @@ integer sumIntegerArray(integer_array x, integer n){
   };
   return result;
 };
+integer productTwoIntegerArrya(integer_array x, integer y, integer n){
+  integer result = 0;
+  for(integer i = 0; i < n; i++){
+    result += (x[i] * y[i]);
+  };
+  return result;
+};
 
