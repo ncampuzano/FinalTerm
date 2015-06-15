@@ -295,9 +295,10 @@
 	"Char.h"
 	"Bool.h"
 
-1434296826 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.cpp
+1434300521 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer.cpp
 	"Integer.h"
 	"Char.h"
+	"Real.h"
 	"Char_Array.h"
 	<math.h>
 
@@ -310,7 +311,7 @@
 	"Problems_Library.h"
 	<iostream>
 
-1434249766 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.cpp
+1434299785 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.cpp
 	"Integer_Array.h"
 	"Definitions.h"
 	"Char_Array.h"
@@ -318,7 +319,7 @@
 	"Bool.h"
 	<iostream>
 
-1434296850 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_matriz.cpp
+1434299802 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_matriz.cpp
 	"Integer_Matriz.h"
 	"Integer_Array.h"
 	"Char_Array.h"
