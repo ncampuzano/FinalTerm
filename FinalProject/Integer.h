@@ -42,5 +42,7 @@ integer sumSecondDiagIntegerMatriz(integer_matriz x, integer n, integer m);
 integer multiplyRowWithColIntegerMatriz(integer_matriz x, integer_matriz y, integer row, integer col, integer n);
 integer sumIntegerArray(integer_array x, integer n);
 integer productTwoIntegerArrya(integer_array x, integer y, integer n);
+integer minIntegerArray(integer_array x, integer n);
+integer maxIntegerArray(integer_array x, integer n);
 
 #endif // INTEGER_H_INCLUDED

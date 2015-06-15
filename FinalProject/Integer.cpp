@@ -224,4 +224,12 @@ integer productTwoIntegerArrya(integer_array x, integer y, integer n){
   };
   return result;
 };
-
+integer minIntegerArray(integer_array x, integer n){
+  integer result = x[0];
+  for(integer i = 1; i < n; i++){
+    if(result >= x[i]){
+      result = x[i];
+    };
+  };
+  return result;
+};
