@@ -58,6 +58,19 @@ integer_array read_integer_array(istream& is, integer n){
   };
   return result;
 };
+integer_array read_integer_array_binary(istream& is, integer n){
+  integer_array result = create_integer_array(n);
+  for(integer i = 0; i<n;i++){
+    write_character_array(cout, "Position ");
+    write_integer(cout, i+1);
+    write_character_array(cout, ": ");
+    result[i] = read_integer(cin);
+    while(result[i] != 0 || result[i] != 1 ){
+      result[i] = read_integer(cin);
+    };
+  };
+  return result;
+};
 ostream& write_integer_array(ostream& os, integer_array x, integer n, character_array separator){
   for(integer i = 0; i < n; i++){
     os<<x[i]<<separator;

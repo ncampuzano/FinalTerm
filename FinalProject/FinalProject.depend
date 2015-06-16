@@ -234,7 +234,7 @@
 	"Integer_Array.h"
 	"Bool.h"
 
-1434411699 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.h
+1434418609 g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.h
 	"Definitions.h"
 	<iostream>
 
@@ -273,9 +273,10 @@
 	"Real.h"
 	<iostream>
 
-1434297792 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\real.cpp
+1434412279 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\real.cpp
 	<math.h>
 	"Real.h"
+	"Integer.h"
 	"Real_Array.h"
 	"Char_Array.h"
 	<iostream>
@@ -311,7 +312,7 @@
 	"Problems_Library.h"
 	<iostream>
 
-1434412110 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.cpp
+1434418576 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\integer_array.cpp
 	"Integer_Array.h"
 	"Definitions.h"
 	"Char_Array.h"
@@ -338,7 +339,7 @@
 	"Bool.h"
 	<iostream>
 
-1434412184 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\arrays.cpp
+1434427025 source:g:\universidad nacional\semestre i\programacion de computadores\finalterm\finalproject\arrays.cpp
 	"Char.h"
 	<iostream>
 	"GlobalFunctions.h"
