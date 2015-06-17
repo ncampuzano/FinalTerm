@@ -84,7 +84,11 @@ void ArrayTo(){
   write_integer(cout, converToNumber(result, n));
 };
 void NumberTo(){
-
+  write_line(cout);
+  write_character_array(cout, "What is the number (not more than 1024): ");
+  integer result = read_integer(cin);
+  writeln_character_array(cout, "The array is ");
+  write_integer_array(cout, converToBinary(result, 10), 10, " , ");
 };
 void Arrays(){
   write_line(cout);
