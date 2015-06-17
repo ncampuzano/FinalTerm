@@ -65,7 +65,7 @@ integer_array read_integer_array_binary(istream& is, integer n){
     write_integer(cout, i+1);
     write_character_array(cout, ": ");
     result[i] = read_integer(cin);
-    while(result[i] != 0 || result[i] != 1 ){
+    while(result[i] != 0 && result[i] != 1 ){
       result[i] = read_integer(cin);
     };
   };
@@ -150,6 +150,20 @@ integer_array converToBinary(integer x, integer n){
   for(integer i = 0; i < n; i++){
     result[i] = x % 2;
     x = x / 2;
+  };
+  return result;
+};
+integer_array  zerosToFinish(integer_array x, integer n){
+  integer_array result = create_integer_array(n);
+  integer counter = 0;
+  for(integer i = 0; i < n; i++){
+    if(x[i] != 0){
+        result[counter] = x[i];
+        counter++;
+    };
+  };
+  for(integer i = counter; i < n; i++){
+    result[i] = 0;
   };
   return result;
 };

@@ -23,6 +23,7 @@ set_integer differenceSets(set_integer x, integer n, set_integer y, integer m);
 set_integer symmetricDifferenceSets(set_integer x, integer n, set_integer y, integer m);
 integer_array directProductIntegerArray(integer_array x, integer_array y, integer n);
 integer_array converToBinary(integer x, integer n);
+integer_array  zerosToFinish(integer_array x, integer n);
 
 
 

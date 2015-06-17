@@ -66,10 +66,22 @@ void Direct(){
   write_integer_array(cout, directProductIntegerArray(first,second,n),n, " , ");
 };
 void Zeros(){
-
+  write_line(cout);
+  write_character_array(cout, "What is the array size?: ");
+  integer n = read_integer(cin);
+  writeln_character_array(cout, "Write the elements of integer array");
+  integer_array result = read_integer_array(cin, n);
+  write_character_array(cout, "Moving zeros to finish: ");
+  write_integer_array(cout, zerosToFinish(result,n),n-1, " , ");
 };
 void ArrayTo(){
-
+  write_line(cout);
+  write_character_array(cout, "What is the binary array size?: ");
+  integer n = read_integer(cin);
+  writeln_character_array(cout, "Write the elements of integer array");
+  integer_array result = read_integer_array_binary(cin, n);
+  write_character_array(cout, "The number is ");
+  write_integer(cout, converToNumber(result, n));
 };
 void NumberTo(){
 
