@@ -51,5 +51,8 @@ void Gear(){
   switch(optionNumber){
     case 1:Turns();break;
     case 2:Direction();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };

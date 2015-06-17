@@ -105,5 +105,8 @@ void Polynomials(){
     case 4:Multiply();break;
     case 5:Divide();break;
     case 6:Residue();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };

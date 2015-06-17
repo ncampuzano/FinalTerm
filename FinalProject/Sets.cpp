@@ -107,5 +107,8 @@ void Sets(){
     case 4:SymmetricDifference();break;
     case 5:ItBelongs();break;
     case 6:Content();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };

@@ -18,5 +18,8 @@ void Money(){
   option optionNumber = read_option(cin);
   switch(optionNumber){
     case 1:Weigh();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };

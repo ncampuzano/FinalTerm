@@ -109,5 +109,8 @@ void Matriz(){
     case 5:SumDiag();break;
     case 6:IsMagic();break;
     case 7:ReeplaceMatriz();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };

@@ -32,5 +32,8 @@ int main()
       case 8: Sets();break;
       case 9: Matriz();break;
       case 10: Arrays();break;
+      default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
     };
 }

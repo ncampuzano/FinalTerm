@@ -153,6 +153,9 @@ void ThreePoints(){
     case 5:BaseAndHeight();break;
     case 6:Bisectors();break;
     case 7:OnePointInside();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };
 void FourPoints(){
@@ -184,5 +187,8 @@ void Geometrical(){
     case 1:ThreePoints();break;
     case 2:FourPoints();break;
     case 3:Cube();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };

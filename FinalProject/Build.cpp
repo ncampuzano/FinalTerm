@@ -53,5 +53,8 @@ void Build(){
       case 1:Hall();break;
       case 2:Brigde();break;
       case 3:Wall();break;
+      default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
     };
 };

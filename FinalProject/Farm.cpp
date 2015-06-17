@@ -45,6 +45,9 @@ void Farm(){
       case 1:LegsInFarm();break;
       case 2:Eggs();break;
       case 3:Milk();break;
+      default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
     };
 
 };

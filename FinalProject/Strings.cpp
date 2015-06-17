@@ -141,5 +141,8 @@ void Strings(){
     case 8:MoveLeft();break;
     case 9:EncodeString();break;
     case 10:DecodeString();break;
+    default:
+        writeln_character_array(cout, "You choose not possible option, I'm sorry");
+        break;
   };
 };
